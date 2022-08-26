@@ -1,5 +1,5 @@
-let taxiFareApiUrl = 'http://localhost:8001/predict'; // replace with your API endpoint
-const centralCoordinates = [-74.00597, 40.71427]; // starting position [lng, lat]
+let taxiFareApiUrl = 'http://localhost:8001/predict'; // replace with your API endpoint #8001 was
+const centralCoordinates = [-6.97061, 38.87789]; // starting position [lng, lat] [-74.00597, 40.71427]
 
 if (window.location.href.includes('https://taxifare.lewagon.com')) {
   taxiFareApiUrl = 'https://taxifare.lewagon.ai/predict';
@@ -10,9 +10,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia3Jva3JvYiIsImEiOiJja2YzcmcyNDkwNXVpMnRtZGwxb
 const displayMap = (start, stop) => {
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location #was change from 11
     center: centralCoordinates,
-    zoom: 10 // starting zoom
+    zoom: 14 // starting zoom
   });
 
   function getRoute(end) {
