@@ -1,4 +1,4 @@
-let taxiFareApiUrl = 'http://localhost:8001/predict'; // replace with your API endpoint #8001 was
+let taxiFareApiUrl = 'https://taxifare.lewagon.ai/predict'; // replace with your API endpoint #8001 was
 const centralCoordinates = [-6.97061, 38.87789]; // starting position [lng, lat] [-74.00597, 40.71427]
 
 if (window.location.href.includes('https://taxifare.lewagon.com')) {
